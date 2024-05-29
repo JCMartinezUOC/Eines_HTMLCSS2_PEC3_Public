@@ -1,0 +1,32 @@
+<header>
+    <nav class="px-[2%] py-2 md:px-[5%] lg:px-[10%] border-b-[solid] h-[79px] border-b-3 border-navborder" id="nav-header">
+        <div class="flex flex-wrap items-center justify-between mx-auto px-2 h-[60px]">
+            <a class="flex items-center space-x-2" href="index.html">
+                <picture class="inline-block align-middle">
+                    <source srcset="./assets/images/logo.png?as=webp&width=50" type="image/webp" />
+                    <img src="./assets/images/logo.png?width=50" alt="Logo" width="50" height="50" />
+                </picture>
+                <span class="self-center text-2xl text-logo font-bold text-shadow-logo shadow-[rgba(0,0,0,0.7)] font-logo whitespace-nowrap">Chefs de pueblo</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Abrir menú principal</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden w-full md:flex md:w-auto md:h-100" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:mt-0 md:border-0">
+                    <li class="block py-2 px-3">
+                      <a href="#" class="text-navlink-active md:p-0" aria-current="page">Los chefs</a>
+                    </li>
+                    <li class="block py-2 px-3">
+                      <a href="#" class="text-navlink hover:text-navlink-hover md:p-0">Galería</a>
+                    </li>
+                    <li class="block py-2 px-3">
+                      <a href="#" class="text-navlink hover:text-navlink-hover md:p-0">Página IA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

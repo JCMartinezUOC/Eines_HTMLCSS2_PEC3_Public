@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         'logo': ['"Dancing Script"', 'cursive']
       },
+      borderWidth: {
+       '3': '3px',
+      },
       colors: {
         'tertiary': '#f8f9fa',
         'links': '#0d6efd',
@@ -15,6 +18,7 @@ module.exports = {
         'navlink': '#ff00008c',
         'navlink-hover': '#ff0000b3',
         'navlink-active': '#ff0000e6',
+        'navborder': '#f8f9fa',
         'logo': '#ff0000'
       },
       textShadow: {
