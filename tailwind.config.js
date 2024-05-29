@@ -1,9 +1,41 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'logo': ['"Dancing Script"', 'cursive']
+      },
+      colors: {
+        'tertiary': '#f8f9fa',
+        'links': '#0d6efd',
+        'links-hover': '#0a58ca',
+        'navlink': '#ff00008c',
+        'navlink-hover': '#ff0000b3',
+        'navlink-active': '#ff0000e6',
+        'logo': '#ff0000'
+      },
+      textShadow: {
+        sm: '0 1px 2px var(--tw-shadow-color)',
+        logo: '0 2px 2px var(--tw-shadow-color)',
+        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+        lg: '0 8px 16px var(--tw-shadow-color)',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
+  ],
 }
 
