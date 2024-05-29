@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+    screens: {
+      'xs': '400px',
+      ...defaultTheme.screens,
+    },
     extend: {
       fontFamily: {
         'logo': ['"Dancing Script"', 'cursive']
