@@ -16,8 +16,8 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #fff; /* Changed background color to white */
+    color: #333; /* Changed text color to dark */
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #77aaff 3px solid;
@@ -32,7 +32,7 @@ header .brand {
 }
 
 header a {
-    color: #fff;
+    color: #333; /* Changed link color to dark */
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -43,6 +43,7 @@ header ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0; /* Removed margin from the ul */
 }
 
 header li {
@@ -51,6 +52,7 @@ header li {
 
 header nav {
     margin-top: 10px;
+    margin-left: auto; /* Pushes the nav to the right */
 }
 
 header .active {
@@ -63,18 +65,18 @@ main {
 
 section {
     padding: 20px 0;
-    border-bottom: 1px solid #ccc;
+    /* Removed border-bottom property */
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: #fff; /* Changed background color to white */
+    color: #333;
     padding: 20px 0;
     margin-top: 20px;
 }
 
 footer .footer-divider {
-    border-top: 1px solid #fff;
+    border-top: 1px solid #333; /* Changed divider color to dark */
     margin-bottom: 20px;
 }
 
@@ -112,7 +114,7 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #fff;
+    color: #333; /* Changed link color to dark */
     text-decoration: none;
 }
 
